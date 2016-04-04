@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset= 'utf=8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Sweet Cloud Website</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cookie">
+	<link rel="stylesheet" type="text/css" href="http://weloveiconfonts.com/api/?family=zocial">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+
+
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<header class='row'>
+
+			<div class="col-sm-12 color-bars text-center icon-bar">
+				<a href="#"><i class='fa fa-bars fa-2x'></i></a>
+			</div>
+
+			<div class='menu'>
+				<div class="icon-close">
+					<img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+				</div>
+
+				<nav class="navigation text-center">
+					<ul>
+						<li>Home</li>
+						<li>Services</li>
+						<li>Contact</li>
+					</ul>
+				</nav>
+			</div>
+			
+			
+		</header>	
+
+		<main class="container-fluid">
+
+			<section class="row">
+				<div class="col-sm-12  col-md-6 text-center col-centered-sm">
+					<div class="logo"><img src="img/logo.png"></div>
+					<h1 class='type-color-h1'>Want to get the most fun and indulgence experience to your senses...?</h1>
+					<div class='introduction-text'><p>SweetCloud is a candy factory that provides all kinds of desserts catering services for any ocasion such as birthday party, weddings, celebrations, special gatherings, reunions, trips or even just a quick package for any guilty pleasure.</p></div>
+					<button class="btn btn-default btn-lg gradient text-uppercase"><strong>Check out our work</strong></button>
+				</div>		
+				
+				<div class="col-md-6 cart">
+					<img src="img/cart.png" class="img-responsive">
+				</div>
+			</section>
+
+			<section class="row text-center">
+				<div class="col-sm-4 col-md-4 col-centered-sm-v3 ">
+					<img src="img/cloud_icon.png">
+					<h2 class='type-color-blue'>About us</h2>
+					<p class='type-color-blue'>If you want to know more about our services and how we can help you, please click <a href="#">here</a></p>	
+				</div>
+				
+				<div class="col-sm-4 col-md-4 col-centered-sm-v3">
+					<img src="img/chef_icon.png">
+					<h2 class='type-color-tan'>Recipes</h2>
+					<p class='type-color-tan'>Visit our <a href="#">blog</a> where we share some of our most popular and traditional candy recipes with you. Most of them are simple and easy to 
+					try</p>
+				</div>
+			
+				<div class="col-sm-4 col-md-4 col-centered-sm-v3">
+					<img src="img/phone_icon.png">
+					<h2 class='type-color-pink'>Contact us</h2>
+					<p class='type-color-pink'>We want to hear from you...Feel free to contact us <a href="#">here</a> about any questions, suggestions or comments you may have.</p>
+				</div>
+			
+				
+			</section>
+			
+		</main>
+
+		<footer class='row text-center'>
+			<div class='col-sm-12 col-centered-sm-v2 social'>
+				<a href="#" class="icon-button facebook"><span class="zocial-facebook"></span></a>
+				<a href="#" class="icon-button twitter"><span class="zocial-twitter"></span></a>
+				<a href="#" class="icon-button linkedin"><span class="zocial-linkedin"></span></a>
+			</div>
+			<p class="col-sm-12 col-md-12 ">Copyright &#xA9; 2014 SweetCloud Inc, All Rights Reserved.</p>
+
+		</footer>
+	</div>
+
+	<script src="js/jquery/dist/jquery.min.js"></script>
+
+	<!-- script to open the drawer -->
+    <script>
+	     var main = function(){
+	        $('.icon-bar').click(function(){
+	          $('.menu').animate({
+	            left: '0px'
+	          }, 200);
+	        });
+
+	        $('.icon-close').click(function(){
+	          $('.menu').animate({
+	            left : '-999px'
+	          }, 200);
+
+	        });
+	      };
+
+	      $(document).ready(main);
+
+    </script>
+
+
+</body>
+</html>
